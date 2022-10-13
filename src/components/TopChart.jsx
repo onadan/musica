@@ -3,8 +3,10 @@ import { AiOutlineHeart } from "react-icons/ai";
 
 const TopChart = () => {
   return (
-    <div className="my-10 w-full">
-      <header className="text-2xl font-bold text-white my-4">Top Charts</header>
+    <div className="my-10 w-full overflow-hidden">
+      <header className="text-2xl font-bold text-white  my-4">
+        <p className=""> Top Charts</p>
+      </header>
 
       <div className="bg-darkAlt w-full rounded-3xl p-4 h-24 my-2">
         <div className="flex justify-between items-center">

@@ -1,9 +1,4 @@
-import Home from './Home'
-import Collections from './Home'
-import MusicVideo from './Home'
-import Radio from './Home'
-import ViewAlbum from './Home'
+import Home from "./Home";
+import Collection from "./Collection";
 
-export {
-    Home, Collections, MusicVideo, Radio, ViewAlbum
-}
+export { Home, Collection };

@@ -1,27 +1,23 @@
 import { Sidebar } from "./components/Sidebar";
 import Searchbar from "./components/Searchbar";
 import { Route, Routes } from "react-router-dom";
-import { Home, Collections, ViewAlbum } from "./pages";
-// import {loader} from './assets'
+import { Home, Collection } from "./pages";
 
 function App() {
   return (
     <div className="max-w-[1440px] w-full mx-auto">
-    <div className="flex flex-row">
-      <Sidebar />
+      <div className="flex">
+        <Sidebar />
 
-      <div className="w-full">
-        <Searchbar />
+        <div className="lg:pl-[6.25rem] w-full lg:h-screen">
+          <Searchbar />
 
-        <div>
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/collections" element={<Collections />} />
-            <Route path="/viewalbum" element={<ViewAlbum />} />
+            <Route path="/collection" element={<Collection />} />
           </Routes>
         </div>
       </div>
-    </div>
     </div>
   );
 }
